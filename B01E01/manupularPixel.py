@@ -19,12 +19,12 @@ imagem.item(100, 100)
 imagem.itemset((100, 100), 42)
 
 #escrever a dimensao da imagem em pixels (linhas x colunas)
-print imagem.shape
+print(imagem.shape)
 
 #pegar o retorno da funcao e atribuir em variaveis linhas e colunas
 linhas, colunas = imagem.shape
-print linhas
-print colunas
+print(linhas)
+print(colunas)
 
 #percorrer a imagem com o laco for
 for i in range(0, linhas):
