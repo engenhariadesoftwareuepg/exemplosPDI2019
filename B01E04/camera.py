@@ -12,7 +12,7 @@ while(True):
     #canny = cv2.Canny(gray,100,200)
 	
     opencvOutput = cv2.filter2D(gray, -1, laplaciano)
-    cv2.imshow('frame',canny)
+    cv2.imshow('frame',opencvOutput)
     cv2.imshow('camera',gray)
     tecla = cv2.waitKey(1)
     if tecla == ord('q'):
