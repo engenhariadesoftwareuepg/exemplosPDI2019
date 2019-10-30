@@ -19,7 +19,7 @@ def limiarizar(imagem, limiar):
     cv2.destroyAllWindows()
 
 def limiarizarOpenCv(imagem):
-    imagemBin = cv2.adaptiveThreshold(imagem, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 7, 1)
+    imagemBin = cv2.adaptiveThreshold(imagem, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 51, 1)
     cv2.imshow("Imagem limiarizada", imagemBin)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
@@ -56,7 +56,7 @@ def menu():
     print ("5. Sair")
     print (67 * "-")
 
-img = cv2.imread('../images/dog1.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../images/dog2.jpg', cv2.IMREAD_GRAYSCALE)
 tecla=0
 loop=True      
   
